@@ -54,8 +54,13 @@ let ansCorrect = 0
 }
 
 
-  let grade;  //TODO 3.2 use this variable to calculate the candidates score.
-
+  let grade = (ansCorrect/correctAnswers.length)*100;  //TODO 3.2 use this variable to calculate the candidates score.
+  console.log(`Your score is: ${grade}`);
+if (grade>=80) {
+  console.log("You Passed!");
+}else{
+  console.log("Fail!");
+}
 
   return grade;
 }
